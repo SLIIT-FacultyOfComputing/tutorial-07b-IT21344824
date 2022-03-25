@@ -8,18 +8,18 @@ Item::Item()
   itemCode = 0;
   unitPrice = 0;
   discount = 0;
+  
 }
-// 5. Implement Overloaded Constructor Implementation\
-Item::Item(int ItemCode , float UnitPrice , float Discount)
-{
-  itemCode = ItemCode;
-  unitPrice = UnitPrice;
-  discount = Discount;
+// 5. Implement Overloaded Constructor Implementation
+Item::Item(int XitemCode , float XunitPrice){
+  itemCode = XitemCode;
+  unitPrice = XunitPrice;
+  
 }
 // 6. Implement Destructor (display "Destructor Called")
 Item::~Item()
 {
-  
+  cout<<"destructor is called"<<endl;
 }
 
 void Item::setDiscount(float pdiscount) {
